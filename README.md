@@ -53,8 +53,20 @@ So, you've got the basics down. What's next?
 
 ## How to Run
 
-Run this command in the project terminal
+Run this command in the project terminal to create 100 commits in the default range (from one year ago through today):
 
 ```bash
 node index.js
+```
+
+To choose a date range, pass the start date, end date, and optionally the number of commits. Dates must use `YYYY-MM-DD` format, and both dates are inclusive:
+
+```bash
+node index.js 2024-01-01 2024-12-31 10
+```
+
+The arguments are:
+
+```text
+node index.js <start-date> <end-date> [commit-count]
 ```
